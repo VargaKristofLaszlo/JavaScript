@@ -16,7 +16,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hVIrwUQu4Awt9ydD07wRBTSCZP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,7 +56,7 @@
       <updated>1600090035403</updated>
       <workItem from="1600090036593" duration="312000" />
       <workItem from="1600112510412" duration="6605000" />
-      <workItem from="1600179409133" duration="7101000" />
+      <workItem from="1600179409133" duration="7482000" />
     </task>
     <servers />
   </component>
@@ -60,6 +64,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="838" y="418" key="Github.ShareDialog" timestamp="1600186852750">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600186852750" />
+    <state x="766" y="218" key="Github.UntrackedFilesDialog" timestamp="1600186860955">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="766" y="218" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600186860955" />
     <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1600119118136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -76,5 +88,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600119118136" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600187140960">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600187140960" />
   </component>
 </project>
