@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Fixing typos">
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Table second row fixed">
+      <change afterPath="$PROJECT_DIR$/static/Doctor_Edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Patient_Edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Doctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patient.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -58,7 +62,7 @@
       <updated>1600090035403</updated>
       <workItem from="1600090036593" duration="312000" />
       <workItem from="1600112510412" duration="6605000" />
-      <workItem from="1600179409133" duration="8497000" />
+      <workItem from="1600179409133" duration="10258000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -74,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600187480934</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Table second row fixed">
+      <created>1600188225447</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600188225447</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,7 +94,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kis változtatások" />
     <MESSAGE value="Fixing typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing typos" />
+    <MESSAGE value="Table second row fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Table second row fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1600186852750">
@@ -110,9 +122,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600119118136" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600187486586">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600188230573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600187486586" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600188230573" />
   </component>
 </project>
