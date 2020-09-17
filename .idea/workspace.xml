@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Comit">
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Added background image,&#10;edited the text styles">
+      <change afterPath="$PROJECT_DIR$/static/myCSS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Doctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Doctor_Registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor_Registering.html" afterDir="false" />
@@ -37,8 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -90,7 +91,7 @@
       <workItem from="1600278748993" duration="263000" />
       <workItem from="1600287764669" duration="554000" />
       <workItem from="1600321119903" duration="604000" />
-      <workItem from="1600339617538" duration="3656000" />
+      <workItem from="1600339617538" duration="10587000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -134,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600273535269</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added background image,&#10;edited the text styles">
+      <created>1600343741715</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600343741715</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +165,8 @@
     <MESSAGE value="Fixing typos" />
     <MESSAGE value="Table second row fixed" />
     <MESSAGE value="Comit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comit" />
+    <MESSAGE value="Added background image,&#10;edited the text styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added background image,&#10;edited the text styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600342609565">
@@ -188,9 +197,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600119118136" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600273537963">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600343745273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600273537963" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600343745273" />
   </component>
 </project>
