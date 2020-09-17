@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Comit">
-      <change afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Doctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Doctor_Registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor_Registering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Patient_Registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patient_Registering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +86,11 @@
       <workItem from="1600199133700" duration="719000" />
       <workItem from="1600254857759" duration="479000" />
       <workItem from="1600255355647" duration="33000" />
-      <workItem from="1600267199024" duration="5789000" />
+      <workItem from="1600267199024" duration="5864000" />
+      <workItem from="1600278748993" duration="263000" />
+      <workItem from="1600287764669" duration="554000" />
+      <workItem from="1600321119903" duration="604000" />
+      <workItem from="1600339617538" duration="3656000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -118,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600273100158</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Comit">
+      <created>1600273535269</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600273535269</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +150,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Kis változtatások" />
@@ -143,6 +160,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Comit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600342609565">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600342609565" />
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1600186852750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -167,9 +188,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600119118136" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600273103165">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600273537963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600273103165" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600273537963" />
   </component>
 </project>
