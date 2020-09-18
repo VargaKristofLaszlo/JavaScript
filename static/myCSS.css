@@ -24,12 +24,13 @@ td:nth-child(5),th:nth-child(5){
 label {
     color: black;
 }
-.indexLabel{
+label[name="indexLabe"]{
     margin-top: 20px;"
     color: black;
 }
-.indexInput{
-   margin-top: 5px;
+input[name="indexInput"]{
+    margin-top: 5px;
+    width: 28%;
 }
 .submitButton{
    margin-top: 40px;
@@ -39,4 +40,15 @@ label {
 .registeringContainer{
     margin-top: 50px;
     margin-left: 10%;
+}
+h1,h2{
+    text-align: center
+}
+.submitButton{
+    background-color: black;
+}
+input[name="submitButton"]{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
 }
