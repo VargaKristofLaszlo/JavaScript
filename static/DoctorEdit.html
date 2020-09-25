@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Product example · Bootstrap</title>
-    <script src="https://kit.fontawesome.com/e4a8c28eb6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="myCSS.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
@@ -22,30 +21,39 @@
     </div>
 </nav>
 
-<table  class="tableStyle">
-    <thead>
-    <tr>
-        <th   scope="col">Name</th>
-        <th   scope="col">Illness</th>
-        <th   scope="col">Date of birth</th>
-        <th   scope="col">Name of the doctor</th>
-        <th   scope="col">&nbsp;</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Test_Name</td>
-        <td>Covid</td>
-        <td>1111.11.11</td>
-        <td>Doctor_name</td>
-        <td>
-            <a href="Patient_Registering.html"> <i class="far fa-edit"> </i> </a>
-            <a href="Patient.html"> <i class="far fa-trash-alt"></i> </a>
-        </td>
-    </tr>
+<div class="registeringContainer">
+    <form>
+        <div class="row">
+            <div class="form-group">
+                <label for="Name"> <b>Name</b></label>
+                <input type="text" class="form-control" id="Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="Phone"> <b>Phone number</b></label>
+                <input type="text" class="form-control" id="Phone">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="Mail"> <b>E-mail</b></label>
+                <input type="text" class="form-control" id="Mail">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="Patients"><b>Medical specialty</b></label>
+                <input type="text" class="form-control" id="Patients">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" class="btn btn-primary" value="Edit" >
+            <a  style="margin-left: 50px;" class="btn btn-primary" href="Doctor.html" >Cancel </a>
 
-    </tbody>
-</table>
+        </div>
+    </form>
+</div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

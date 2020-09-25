@@ -1,0 +1,31 @@
+
+Routing
+
+GET / - index.html
+POST /login                                       jelszó ellenörzés ha  akkor Home.html ha nem akkor vissza
+
+GET /Doctors                                    Doctor.html               Doktorok listája
+
+
+GET /Doctors/new                                Doctor_Registering.html
+POST /Doctors/new
+
+GET /Doctors/edit/:DoctorID                     DoctorEdit.html           Doktorok listájának 1 item edit
+POST /Doctors/edit/:DoctorID
+
+GET /Doctors/del/:DoctorID
+
+
+GET /Patient/:DoctorID/list                     DoctorPatient.html        1 Doktor + a betegei.
+--------------------------------------------------------------------------------------------------------------------
+GET /Patient/new                                Patient_Registering.html
+POST /Patient/new
+
+GET /Patient/edit/:DoctorID/PatientID                PatientEdit.html          1 beteg editelése
+POST /Patient/edit/:DoctorID/PatientID
+
+GET /Patient/del/:DoctorID/PatientID
+
+
+
+

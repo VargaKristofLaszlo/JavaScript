@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Changed">
-      <change afterPath="$PROJECT_DIR$/static/backgroundimage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DoctorEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/DoctorsPatient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/PatientEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Doctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Doctor_Registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor_Registering.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Patient_Registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patient_Registering.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/myCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/myCSS.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -95,6 +94,7 @@
       <workItem from="1600339617538" duration="11279000" />
       <workItem from="1600359566125" duration="173000" />
       <workItem from="1600424106155" duration="3759000" />
+      <workItem from="1601037993263" duration="3310000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -188,6 +188,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601038280878" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600342609565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -220,10 +224,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600119118136" />
-    <state x="759" y="222" key="RollbackChangesDialog" timestamp="1600425761853">
+    <state x="759" y="222" key="RollbackChangesDialog" timestamp="1600690141692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600425761853" />
+    <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600690141692" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600354222833">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
