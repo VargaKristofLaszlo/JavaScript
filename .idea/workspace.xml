@@ -19,18 +19,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Creating routes">
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Routing and middleware descriptions">
+      <change afterPath="$PROJECT_DIR$/middlewares/Auth/authMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Auth/checkPasswordMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Auth/handleWrongPasswordMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Doctor/delDoctorMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorsMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Doctor/saveDoctorMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Permisson/checkPermissionMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Rendering/renderMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Routes/Doctorlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Routes/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Routes/Others.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/Routes/Patientlist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Doctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/DoctorEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/DoctorEdit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Doctor_Registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor_Registering.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/DoctorsPatient.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/DoctorsPatient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patients.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/PatientEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/PatientEdit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Patient_Registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patient_Registering.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Routes" beforeDir="false" afterPath="$PROJECT_DIR$/static/Routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Routes" beforeDir="false" afterPath="$PROJECT_DIR$/RoutesTextFile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +49,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,7 +59,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hVIrwUQu4Awt9ydD07wRBTSCZP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,6 +76,12 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\varga\WebstormProjects\untitled" />
+      <recent name="C:\Users\varga\WebstormProjects\Routes" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
@@ -98,7 +115,7 @@
       <workItem from="1600359566125" duration="173000" />
       <workItem from="1600424106155" duration="3759000" />
       <workItem from="1601037993263" duration="3899000" />
-      <workItem from="1601110449869" duration="5021000" />
+      <workItem from="1601110449869" duration="12845000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -170,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601041878012</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Routing and middleware descriptions">
+      <created>1601116980737</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601116980737</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +221,8 @@
     <MESSAGE value="Made css file" />
     <MESSAGE value="Commit" />
     <MESSAGE value="Creating routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating routes" />
+    <MESSAGE value="Routing and middleware descriptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Routing and middleware descriptions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
@@ -240,13 +265,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600690141692" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601041882583">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601116985581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601041882583" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601116985581" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600425754181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600425754181" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1601122650651">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1601122650651" />
   </component>
 </project>

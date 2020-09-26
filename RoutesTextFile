@@ -68,12 +68,13 @@ POST /login
     checkPasswordMW()   //Check post param if it matches then login else redirect
 
 
-
+GET /Home
+    renderMW(Home.html)
 
 GET /Doctors                                    Doctor.html               Doktorok listája
     authMW()        //Check if the person logged in---> next or redirect
     getDoctorsMW    //Get the doctors from the database
-
+    renderMW(Doctor.html)
 
 
 
@@ -153,13 +154,9 @@ GET,POST /Patient/edit/:DoctorID/PatientID           PatientEdit.html          1
                  -   Else dont
 
 
-GET /Patient/del/:DoctorID/PatientID
+GET /Patient/del/:DoctorID/:PatientID
      authMW()        //Check if the person logged in---> next or redirect
      getDoctorMW()
      getPatientMW()
      delPatientMW()
 
-GET /Patients
-    authMW()
-    getPatientsMW
-    renderMW(Patients.html)
