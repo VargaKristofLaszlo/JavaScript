@@ -1,10 +1,10 @@
-const authMW = require('../Auth/authMW');
-const renderMW = require('../Rendering/renderMW');
-const delPatientMW = require('../Patient/delPatientMW');
-const getPatientMW = require('../Patient/getPatientMW');
-const getPatientsMW = require('../Patient/getPatientsMW');
-const savePatientMW = require('../Patient/savePatientMW');
-const getDoctorMW = require('../Doctor/getDoctorMW');
+const authMW = require('../middlewares/Auth/authMW');
+const renderMW = require('../middlewares/Rendering/renderMW');
+const delPatientMW = require('../middlewares/Patient/delPatientMW');
+const getPatientMW = require('../middlewares/Patient/getPatientMW');
+const getPatientsMW = require('../middlewares/Patient/getPatientsMW');
+const savePatientMW = require('../middlewares/Patient/savePatientMW');
+const getDoctorMW = require('../middlewares/Doctor/getDoctorMW');
 
 module.exports = function (app){
     let objectRepository = {};
