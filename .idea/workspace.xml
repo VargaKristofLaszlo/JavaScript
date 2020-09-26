@@ -19,15 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Changed">
-      <change afterPath="$PROJECT_DIR$/static/DoctorEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/DoctorsPatient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/PatientEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Routes" afterDir="false" />
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Creating routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/Doctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/myCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/myCSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/DoctorEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/DoctorEdit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Doctor_Registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Doctor_Registering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/DoctorsPatient.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/DoctorsPatient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Patient.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patients.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/PatientEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/PatientEdit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Patient_Registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/Patient_Registering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Routes" beforeDir="false" afterPath="$PROJECT_DIR$/static/Routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,8 @@
       <workItem from="1600339617538" duration="11279000" />
       <workItem from="1600359566125" duration="173000" />
       <workItem from="1600424106155" duration="3759000" />
-      <workItem from="1601037993263" duration="3310000" />
+      <workItem from="1601037993263" duration="3899000" />
+      <workItem from="1601110449869" duration="5021000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -159,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600353967312</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Creating routes">
+      <created>1601041878012</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601041878012</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +196,8 @@
     <MESSAGE value="Added background image,&#10;edited the text styles" />
     <MESSAGE value="Made css file" />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Creating routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating routes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
@@ -228,10 +240,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600690141692" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600354222833">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601041882583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600354222833" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601041882583" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600425754181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

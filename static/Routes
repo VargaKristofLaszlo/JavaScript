@@ -1,31 +1,165 @@
+MW:
+
+//Rendering
+    renderMW
+
+//Login & authentication
+    checkPasswordMW
+    handleWrongPasswordMW
+    authMW
+
+//Permission check
+    checkPermissionMW
+
+
+//Get data
+    getPatientsMW
+    getPatientMW
+    getDoctorsMW
+    getDoctorMW
+
+
+//Doctor data manipulation
+    saveDoctorMW
+    delDoctorMW
+
+//Patient data manipulation
+    savePatientMW
+    delPatientMW
+
+----------------------------------------------------------
+middlewares/Patient/
+    getPatientsMW.js
+    getPatientMW.js
+    savePatientMW.js
+    delPatientMW.js
+
+
+middlewares/Doctor/
+    getDoctorsMW.js
+    getDoctorMW.js
+    saveDoctorMW.js
+    delDoctorMW.js
+
+middlewares/auth/
+    checkPasswordMW.js
+    handleWrongPasswordMW.js
+    authMW.js
+
+middlewares/permission/
+    checkPermissionMW.js
+
+middlewares/rendering/
+    renderMW.js
+
+
+
 
 Routing
 
 GET / - index.html
-POST /login                                       jelszó ellenörzés ha  akkor Home.html ha nem akkor vissza
+        renderMW(index.html)
+                                       jelszó ellenörzés ha  akkor Home.html ha nem akkor vissza
+GET /?Error = WrongPassword
+    handleWrongPasswordMW(get check param)
+    renderMW(index.html)
+
+POST /login
+    checkPasswordMW()   //Check post param if it matches then login else redirect
+
+
+
 
 GET /Doctors                                    Doctor.html               Doktorok listája
+    authMW()        //Check if the person logged in---> next or redirect
+    getDoctorsMW    //Get the doctors from the database
 
 
-GET /Doctors/new                                Doctor_Registering.html
-POST /Doctors/new
 
-GET /Doctors/edit/:DoctorID                     DoctorEdit.html           Doktorok listájának 1 item edit
-POST /Doctors/edit/:DoctorID
+
+GET,POST /Doctors/new                                Doctor_Registering.html
+     authMW()        //Check if the person logged in---> next or redirect
+     checkPermissionMW()
+     saveDoctorMW()
+        if(typeof request.body.name === 'undefined') {
+            return next();
+        }
+            //Working with the data
+            res.redirect('/Doctors');
+            res.locals
+            next();
+     renderMW(Doctor_Registering.html (new))
+            -   If we send values fill the form with that
+            -   Else dont
+
+
+
+
+GET,POST /Doctors/edit/:DoctorID                     DoctorEdit.html           Doktorok listájának 1 item edit
+     authMW()        //Check if the person logged in---> next or redirect
+     getDoctorMW()
+     saveDoctorMW()
+     renderMW(Doctor_Registering.html (new))
+                 -   If we send values fill the form with that
+                 -   Else dont
+
+
 
 GET /Doctors/del/:DoctorID
+     authMW()        //Check if the person logged in---> next or redirect
+      getDoctorMW()
+            db('...', function(result){
+                if(result.length === 0){
+                    return res.redirect('/Doctors')
+                    }
+                }
+                res.locals.doctor = result[0];
+                next;
+               )
+      delDoctorMW()
+            res.locals.doctor.delete();
+            res.redirect('/Doctors');
 
 
 GET /Patient/:DoctorID/list                     DoctorPatient.html        1 Doktor + a betegei.
+     authMW()        //Check if the person logged in---> next or redirect
+     getDoctorMW()
+     getPatientsMW()
+     renderMW(Patients.html)
 --------------------------------------------------------------------------------------------------------------------
-GET /Patient/new                                Patient_Registering.html
-POST /Patient/new
+GET,POST /Patient/new/:DoctorID                                Patient_Registering.html
+     authMW()        //Check if the person logged in---> next or redirect
+     savePatientMW()
+        if(typeof request.body.name === 'undefined') {
+            return next();
+        }
+            //Working with the data
+            res.redirect('/Patient/:DoctorId/list');
+            res.locals
+            next();
+     renderMW(Patient_Registering.html (new))
+            -   If we send values fill the form with that
+            -   Else dont
 
-GET /Patient/edit/:DoctorID/PatientID                PatientEdit.html          1 beteg editelése
-POST /Patient/edit/:DoctorID/PatientID
+
+
+GET,POST /Patient/edit/:DoctorID/PatientID           PatientEdit.html          1 beteg editelése
+     authMW()        //Check if the person logged in---> next or redirect
+     getDoctorMW()
+     getPatientMW()
+     savePatientMW()
+     renderMW(Patient_Registering.html (new))
+                 -   If we send values fill the form with that
+                 -   Else dont
+
 
 GET /Patient/del/:DoctorID/PatientID
+     authMW()        //Check if the person logged in---> next or redirect
+     getDoctorMW()
+     getPatientMW()
+     delPatientMW()
 
-
-
-
+GET /Patients
+    authMW()
+    getPatientsMW
+    renderMW(Patients.html)
