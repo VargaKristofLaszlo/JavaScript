@@ -1,0 +1,36 @@
+<%- include('TableHeader.ejs') -%>
+<%- include('Navbar.ejs') -%>
+<table class="tableStyle">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Phone number</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Medical specialty</th>
+        <th scope="col">&nbsp</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Teszt_Name</td>
+        <td>01 23-234 5678</td>
+        <td>teszt@mail.com</td>
+        <td>field</td>
+        <td>
+            <a href="Doctor.ejs"> <i class="far fa-edit"> </i> </a>
+            <a href="Doctor.ejs"> <i class="far fa-trash-alt"></i> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Teszt_Name_2</td>
+        <td>01 23-234 5678</td>
+        <td>teszt2@mail.com</td>
+        <td>field</td>
+        <td>
+            <a href="Doctor_Registering.ejs"> <i class="far fa-edit"> </i> </a>
+            <a href="Doctor.ejs"> <i class="far fa-trash-alt"></i> </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<%- include('Footer.ejs') -%>

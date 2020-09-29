@@ -3,11 +3,20 @@ const renderMW = require('../middlewares/Rendering/renderMW');
 const delPatientMW = require('../middlewares/Patient/delPatientMW');
 const getPatientMW = require('../middlewares/Patient/getPatientMW');
 const getPatientsMW = require('../middlewares/Patient/getPatientsMW');
+const getAllPatientsMW = require('../middlewares/Patient/getAllPatientsMW');
 const savePatientMW = require('../middlewares/Patient/savePatientMW');
 const getDoctorMW = require('../middlewares/Doctor/getDoctorMW');
 
 module.exports = function (app){
     let objectRepository = {};
+
+    //Megjeleníti az összes beteget
+    app.get('/Patient',
+        authMW(objectRepository),
+        getAllPatientsMW(objectRepository),
+        renderMW(objectRepository, 'Patients')
+    );
+
 
     //Megjeleníti egy orvos összes betegét
     app.get('/Patient/:DoctorID/list',

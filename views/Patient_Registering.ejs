@@ -1,0 +1,35 @@
+<%- include('Header.ejs') -%>
+<%- include('Navbar.ejs') -%>
+<div  class="registeringContainer">
+    <form>
+        <div class="row">
+            <div class="form-group">
+                <label for="Name"> <b>Name</b></label>
+                <input type="text" class="form-control" id="Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="Illness"><b>Illness</b></label>
+                <input type="text" class="form-control" id="Illness">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="Birth"> <b>Date of birth</b></label>
+                <input type="text" class="form-control" id="Birth">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="Doctor_name"><b>Name of the doctor</b></label>
+                <input type="text" class="form-control" id="Doctor_name">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" class="btn btn-primary" value="Add" >
+            <a style="margin-left: 50px" class="btn btn-primary" href="Patients.ejs" >Cancel </a>
+        </div>
+    </form>
+</div>
+<%- include('Footer.ejs') -%>

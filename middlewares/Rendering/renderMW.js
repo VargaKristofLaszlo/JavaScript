@@ -2,8 +2,8 @@
  * Megjeleníti a paraméterként átadott html-t.
  * */
 
-module.exports = function (objectRepository){
-    return function (res,req,next){
-        return next();
-    }
+module.exports = function (objectRepository, viewName){
+    return function (req, res) {
+        res.render(viewName);
+    };
 }

@@ -1,0 +1,28 @@
+<%- include('TableHeader.ejs') -%>
+<%- include('Navbar.ejs') -%>
+
+<table  class="tableStyle">
+    <thead>
+    <tr>
+        <th   scope="col">Name</th>
+        <th   scope="col">Illness</th>
+        <th   scope="col">Date of birth</th>
+        <th   scope="col">Name of the doctor</th>
+        <th   scope="col">&nbsp;</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Test_Name</td>
+        <td>Covid</td>
+        <td>1111.11.11</td>
+        <td>Doctor_name</td>
+        <td>
+            <a href="Patient_Registering.ejs"> <i class="far fa-edit"> </i> </a>
+            <a href="Patients.ejs"> <i class="far fa-trash-alt"></i> </a>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+<%- include('Footer.ejs') -%>

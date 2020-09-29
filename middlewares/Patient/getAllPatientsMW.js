@@ -1,5 +1,5 @@
 /**
- * Visszadja az összes  egy orvoshoz tartozó patient objektumot és elmenti a res.locals.patients-be
+ * Visszadja az összes  patient objektumot és elmenti a res.locals.patients-be
  * */
 
 module.exports = function (objectRepository){

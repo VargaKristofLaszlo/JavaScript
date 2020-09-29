@@ -19,13 +19,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Made the skeleton of the middlewares and routes">
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="3. Házi kész">
+      <change afterPath="$PROJECT_DIR$/middlewares/Patient/getAllPatientsMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Doctor.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/DoctorEdit.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Doctor_Registering.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/DoctorsPatient.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Home.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Navbar.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/PatientEdit.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Patient_Registering.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Patients.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/TableHeader.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/Others.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Others.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/Patientlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Patientlist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Routes/Doctorlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Doctorlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Routes/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Routes/Others.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Others.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Routes/Patientlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Patientlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Rendering/renderMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Rendering/renderMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Doctor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/DoctorEdit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Doctor_Registering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/DoctorsPatient.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/PatientEdit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Patient_Registering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Patients.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +83,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.58" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\varga\WebstormProjects\untitled\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\varga\WebstormProjects\untitled" />
       <recent name="C:\Users\varga\WebstormProjects\Routes" />
@@ -102,7 +131,11 @@
       <workItem from="1600424106155" duration="3759000" />
       <workItem from="1601037993263" duration="3899000" />
       <workItem from="1601110449869" duration="12881000" />
-      <workItem from="1601136210830" duration="984000" />
+      <workItem from="1601136210830" duration="1027000" />
+      <workItem from="1601209247363" duration="146000" />
+      <workItem from="1601283235077" duration="885000" />
+      <workItem from="1601315504811" duration="914000" />
+      <workItem from="1601393566286" duration="5123000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -188,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601125450114</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="3. Házi kész">
+      <created>1601137221460</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601137221460</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +257,8 @@
     <MESSAGE value="Creating routes" />
     <MESSAGE value="Routing and middleware descriptions" />
     <MESSAGE value="Made the skeleton of the middlewares and routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the skeleton of the middlewares and routes" />
+    <MESSAGE value="3. Házi kész" />
+    <option name="LAST_COMMIT_MESSAGE" value="3. Házi kész" />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
@@ -260,10 +301,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600690141692" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601125452739">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601137225992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601125452739" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601137225992" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600425754181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
