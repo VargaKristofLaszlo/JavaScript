@@ -11,26 +11,20 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>Teszt_Name</td>
-        <td>01 23-234 5678</td>
-        <td>teszt@mail.com</td>
-        <td>field</td>
-        <td>
-            <a href="Doctor.ejs"> <i class="far fa-edit"> </i> </a>
-            <a href="Doctor.ejs"> <i class="far fa-trash-alt"></i> </a>
-        </td>
-    </tr>
-    <tr>
-        <td>Teszt_Name_2</td>
-        <td>01 23-234 5678</td>
-        <td>teszt2@mail.com</td>
-        <td>field</td>
-        <td>
-            <a href="Doctor_Registering.ejs"> <i class="far fa-edit"> </i> </a>
-            <a href="Doctor.ejs"> <i class="far fa-trash-alt"></i> </a>
-        </td>
-    </tr>
+    <%  doctorData.forEach(function (doctor){ %>
+        <tr>
+            <td><%= doctor.Name%>   </td>
+            <td><%= doctor.Phone_number%>   </td>
+            <td><%= doctor.E_mail%> </td>
+            <td><%= doctor.Medical_scpecialty%> </td>
+            <td>
+                <a href='/Doctors/edit/<%= doctor._DoctorID%>'> <i class="far fa-edit"> </i> </a>
+                <a href='#'> <i class="far fa-trash-alt"></i> </a>
+            </td>
+        </tr>
+
+    <%  });  %>
+
     </tbody>
 </table>
 <%- include('Footer.ejs') -%>

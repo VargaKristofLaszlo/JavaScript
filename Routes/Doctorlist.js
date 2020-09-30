@@ -13,24 +13,24 @@ module.exports = function (app){
    app.get('/Doctors',
        authMW(objectRepository),
        getDoctorsMW(objectRepository),
-       renderMW(objectRepository, 'Doctors')
+       renderMW(objectRepository, 'Doctor')
        );
 
    //Létrehoz egy új orvost
-   app.get('Doctors/new',
+   app.use('/Doctors/new',
        authMW(objectRepository),
        checkPermissionMW(objectRepository),
        saveDoctorMW(objectRepository),
-       renderMW(objectRepository, 'newDoctor')
+       renderMW(objectRepository, 'Doctor_Registering')
        );
 
    //Módosítja az orvos adatait
-   app.get('/Doctors/edit/:DoctorID',
+   app.use('/Doctors/edit/:DoctorID',
        authMW(objectRepository),
        checkPermissionMW(objectRepository),
-       getDoctorsMW(objectRepository),
+       getDoctorMW(objectRepository),
        saveDoctorMW(objectRepository),
-       renderMW(objectRepository, 'newDoctor')
+       renderMW(objectRepository, 'DoctorEdit')
        );
 
    //Törli az orvost

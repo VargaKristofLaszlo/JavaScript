@@ -19,38 +19,37 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="3. Házi kész">
-      <change afterPath="$PROJECT_DIR$/middlewares/Patient/getAllPatientsMW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Doctor.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/DoctorEdit.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Doctor_Registering.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/DoctorsPatient.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Footer.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Header.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Home.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Navbar.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/PatientEdit.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Patient_Registering.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/Patients.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/TableHeader.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="ejs fájlok elkészültek, az oldalakat middleware-ek szolgálják ki.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/Doctorlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Doctorlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Routes/Others.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Others.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Routes/Patientlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Patientlist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Auth/authMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/authMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Auth/checkPasswordMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/checkPasswordMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Auth/handleWrongPasswordMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/handleWrongPasswordMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/delDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/delDoctorMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/getDoctorsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorsMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/saveDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/saveDoctorMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getAllPatientsMW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Rendering/renderMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Rendering/renderMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Doctor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/DoctorEdit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Doctor_Registering.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/DoctorsPatient.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/PatientEdit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Patient_Registering.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Patients.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/myCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/myCSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Doctor.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Doctor.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/DoctorEdit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/DoctorEdit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Doctor_Registering.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Doctor_Registering.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Navbar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/PatientEdit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/PatientEdit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Patient_Registering.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Patient_Registering.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Patients.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Patients.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +134,8 @@
       <workItem from="1601209247363" duration="146000" />
       <workItem from="1601283235077" duration="885000" />
       <workItem from="1601315504811" duration="914000" />
-      <workItem from="1601393566286" duration="5123000" />
+      <workItem from="1601393566286" duration="6549000" />
+      <workItem from="1601463642884" duration="16341000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -228,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601137221460</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ejs fájlok elkészültek, az oldalakat middleware-ek szolgálják ki.">
+      <created>1601399003455</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1601399003455</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,17 +265,18 @@
     <MESSAGE value="Routing and middleware descriptions" />
     <MESSAGE value="Made the skeleton of the middlewares and routes" />
     <MESSAGE value="3. Házi kész" />
-    <option name="LAST_COMMIT_MESSAGE" value="3. Házi kész" />
+    <MESSAGE value="ejs fájlok elkészültek, az oldalakat middleware-ek szolgálják ki." />
+    <option name="LAST_COMMIT_MESSAGE" value="ejs fájlok elkészültek, az oldalakat middleware-ek szolgálják ki." />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601038280878" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600342609565">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601478697612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600342609565" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601478697612" />
     <state x="784" y="422" key="Github.CreateGistDialog" timestamp="1600353843384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -301,14 +309,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600690141692" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601137225992">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601399008311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601137225992" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600425754181">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601399008311" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601476309317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600425754181" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601476309317" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1601122650651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

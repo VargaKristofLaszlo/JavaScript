@@ -51,3 +51,10 @@ input[name="submitButton"]{
     color: white;
     margin-top: 10px;
 }
+a[name="submitButton"]{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    background-color: black;
+    color: white;
+
+}

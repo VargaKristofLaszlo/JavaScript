@@ -3,7 +3,24 @@
  * */
 
 module.exports = function (objectRepository){
-    return function (res,req,next){
+    return function (req,res,next){
+
+        res.locals.patients = [
+            {
+                Name: 'Test_Name',
+                Illness: 'Covid',
+                Date_of_birth:  '1999.11.11',
+                Name_of_the_doctor: 'Doctor_Name',
+                _id:'id1'
+            },
+            {
+                Name: 'Test_Name2',
+                Illness: 'broken hand',
+                Date_of_birth:  '1999.11.11',
+                Name_of_the_doctor: 'Doctor_Name',
+                _id:'id1'
+            }
+        ];
         return next();
     }
 }

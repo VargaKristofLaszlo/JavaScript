@@ -4,7 +4,7 @@
  * */
 
 module.exports = function (objectRepository){
-    return function (res,req,next){
+    return function (req,res,next){
         return next();
     }
 }

@@ -1,5 +1,4 @@
 const authMW = require('../middlewares/Auth/authMW');
-const checkPasswordMW = require('../middlewares/Auth/checkPasswordMW');
 const handleWrongPasswordMW = require('../middlewares/Auth/handleWrongPasswordMW');
 const renderMW = require('../middlewares/Rendering/renderMW');
 
@@ -13,9 +12,5 @@ module.exports = function (app){
         renderMW(objectRepository, 'index')
         );
 
-    //A megadott jelszót ellőnörzi.
-    app.get('/Login',
-        checkPasswordMW(objectRepository)
-        );
 
 }

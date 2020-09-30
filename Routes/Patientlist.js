@@ -3,40 +3,35 @@ const renderMW = require('../middlewares/Rendering/renderMW');
 const delPatientMW = require('../middlewares/Patient/delPatientMW');
 const getPatientMW = require('../middlewares/Patient/getPatientMW');
 const getPatientsMW = require('../middlewares/Patient/getPatientsMW');
-const getAllPatientsMW = require('../middlewares/Patient/getAllPatientsMW');
 const savePatientMW = require('../middlewares/Patient/savePatientMW');
 const getDoctorMW = require('../middlewares/Doctor/getDoctorMW');
 
 module.exports = function (app){
     let objectRepository = {};
 
-    //Megjeleníti az összes beteget
-    app.get('/Patient',
-        authMW(objectRepository),
-        getAllPatientsMW(objectRepository),
-        renderMW(objectRepository, 'Patients')
-    );
 
 
-    //Megjeleníti egy orvos összes betegét
-    app.get('/Patient/:DoctorID/list',
+    //Megjeleníti az  összes beteget
+    app.get('/Patients/',
         authMW(objectRepository),
         getPatientsMW(objectRepository),
         renderMW(objectRepository, 'Patients')
     );
 
+
     //Létrehoz egy új beteget
-    app.get('/Patient/new/:DoctorID',
+    app.use('/Patient/new/:DoctorID',
         authMW(objectRepository),
         savePatientMW(objectRepository),
-        renderMW(objectRepository, 'newPatient')
+        renderMW(objectRepository, 'Patient_Registering')
     );
 
     //Módosítja a beteg adatait
-    app.get('/Patient/edit/:DoctorID/PatientID',
+    app.use('/Patient/edit/:PatientID',
         authMW(objectRepository),
+        getPatientMW(objectRepository),
         savePatientMW(objectRepository),
-        renderMW(objectRepository, 'newPatient')
+        renderMW(objectRepository, 'PatientEdit')
     );
 
     //Törli a beteget
