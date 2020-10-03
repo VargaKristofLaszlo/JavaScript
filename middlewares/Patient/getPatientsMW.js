@@ -18,7 +18,7 @@ module.exports = function (objectRepository){
                 Illness: 'broken hand',
                 Date_of_birth:  '1999.11.11',
                 Name_of_the_doctor: 'Doctor_Name',
-                _id:'id1'
+                _id:'id2'
             }
         ];
         return next();

@@ -34,6 +34,9 @@ module.exports = function (app){
         renderMW(objectRepository, 'PatientEdit')
     );
 
+
+
+
     //Törli a beteget
     app.get('/Patient/del/:DoctorID/:PatientID',
         authMW(objectRepository),

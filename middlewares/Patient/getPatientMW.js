@@ -6,15 +6,16 @@
 
 module.exports = function (objectRepository){
     return function (req,res,next){
-        res.locals.patient = [
+        res.locals.patient =
             {
                 Name: 'Test_Name',
                 Illness: 'Covid',
                 Date_of_birth:  '1999.11.11',
                 Name_of_the_doctor: 'Doctor_Name',
                 _id:'id1'
-            }
-        ];
+            };
+
+
         return next();
     }
 }

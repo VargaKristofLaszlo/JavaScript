@@ -16,6 +16,8 @@ module.exports = function (objectRepository){
         }
         console.log('Work in progress');
         console.log(req.body);
+
+
         return res.redirect('/Patients');
     }
 }
