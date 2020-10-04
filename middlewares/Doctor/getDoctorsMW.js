@@ -9,7 +9,7 @@ module.exports = function (objectRepository){
     const DoctorModel = requireOption(objectRepository, 'DoctorModel')
 
     return function (req,res,next){
-        DoctorModel.find({}, (err,doctors)=>{
+        DoctorModel.find({visible: true}, (err,doctors)=>{
             if(err) {
                 console.log(err);
                 next(err);

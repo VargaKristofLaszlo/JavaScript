@@ -14,21 +14,16 @@ module.exports = function (objectRepository){
         if(typeof req.body.password === 'undefined') return  next();
 
 
+            DoctorModel.findOne({$and:[{name: req.body.username},{password: req.body.password}]}, (err,doctors)=>{
+                if(err) {
+                    console.log(err);
+                    next(err);
+                }
+                if(doctors) return res.redirect('/Home');
+                res.locals.error = 'Wrong password!';
+                next();
+            });
+        }
 
 
-        DoctorModel.find({username: req.body.username},(err,doctor)=>{
-            if(err){next(err);}
-            res.locals.doctor = doctor;
-            console.log('res.locals.doctor: '+req.body.username);
-
-            }
-        )
-
-        console.log(res.locals.doctor);
-        res.locals.error = 'Wrong password!';
-        next();
-
-
-
-    }
 }
