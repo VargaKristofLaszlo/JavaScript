@@ -2,25 +2,22 @@
  * Visszadja az összes  egy orvoshoz tartozó patient objektumot és elmenti a res.locals.patients-be
  * */
 
-module.exports = function (objectRepository){
-    return function (req,res,next){
+const requireOption = require('../Auth/requireOption');
 
-        res.locals.patients = [
-            {
-                Name: 'Test_Name',
-                Illness: 'Covid',
-                Date_of_birth:  '1999.11.11',
-                Name_of_the_doctor: 'Doctor_Name',
-                _id:'id1'
-            },
-            {
-                Name: 'Test_Name2',
-                Illness: 'broken hand',
-                Date_of_birth:  '1999.11.11',
-                Name_of_the_doctor: 'Doctor_Name',
-                _id:'id2'
+module.exports = function (objectRepository){
+
+    const PatientModel = requireOption(objectRepository, 'PatientModel')
+
+    return function (req,res,next){
+        PatientModel.find({}, (err,patients)=>{
+            if(err) {
+                console.log(err);
+                next(err);
             }
-        ];
-        return next();
+            res.locals.patients = patients;
+            next();
+        });
+
+
     }
 }

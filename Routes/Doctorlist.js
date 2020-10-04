@@ -6,15 +6,14 @@ const getDoctorsMW = require('../middlewares/Doctor/getDoctorsMW');
 const saveDoctorMW = require('../middlewares/Doctor/saveDoctorMW');
 const checkPermissionMW = require('../middlewares/Permisson/checkPermissionMW');
 
-module.exports = function (app){
-    let objectRepository = {};
+const DoctorModel = require('../models/Doctor');
+const PatientModel = require('../models/Patient');
 
-   //Megjeleníti az összes orvost
-   app.get('/Doctors',
-       authMW(objectRepository),
-       getDoctorsMW(objectRepository),
-       renderMW(objectRepository, 'Doctor')
-       );
+module.exports = function (app){
+    let objectRepository = {
+        DoctorModel: DoctorModel,
+        PatientModel: PatientModel
+    };
 
    //Létrehoz egy új orvost
    app.use('/Doctors/new',
@@ -40,4 +39,12 @@ module.exports = function (app){
        getDoctorMW(objectRepository),
        delDoctorMW(objectRepository)
        );
+
+
+    //Megjeleníti az összes orvost
+    app.get('/Doctors',
+        authMW(objectRepository),
+        getDoctorsMW(objectRepository),
+        renderMW(objectRepository, 'Doctor')
+    );
 }

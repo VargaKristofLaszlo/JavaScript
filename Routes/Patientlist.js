@@ -6,9 +6,14 @@ const getPatientsMW = require('../middlewares/Patient/getPatientsMW');
 const savePatientMW = require('../middlewares/Patient/savePatientMW');
 const getDoctorMW = require('../middlewares/Doctor/getDoctorMW');
 
-module.exports = function (app){
-    let objectRepository = {};
+const DoctorModel = require('../models/Doctor');
+const PatientModel = require('../models/Patient');
 
+module.exports = function (app){
+    let objectRepository = {
+        DoctorModel: DoctorModel,
+        PatientModel: PatientModel
+    };
 
 
     //Megjeleníti az  összes beteget

@@ -1,24 +1,27 @@
 <%- include('Header.ejs') -%>
 <%- include('Navbar.ejs') -%>
 <div class="container">
-    <form class="form-signin">
+    <% if (typeof error !== 'undefined') { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <form class="form-signin" method="post">
         <div class = "row">
             <label  name="indexLabel"  for="Username"><b>Username</b></label>
         </div>
         <div class = "row">
-            <input name="indexInput"  type="text" id="Username" class="form-control" placeholder="Username" required autofocus>
+            <input name="username"  type="text" id="Username" class="form-control" placeholder="Username" required autofocus>
         </div>
         <div  class = "row">
             <label name="indexLabel"  for="inputPassword"><b>Password</b></label>
         </div>
         <div  class = "row">
-            <input name="indexInput"  type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <input name="password"  type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         </div>
         <div  class="row">
-            <a  name="submitButton"  type="submit"   href="/Home">Login</a>
+            <input  name="submitButton"  type="submit"   class="btn btn-primary" value="Login"</input>
         </div>
         <div  class="row">
-            <input  name="submitButton"  type="submit"  value="Forgot password" >
+            <input  name="submitButton"  type="submit"  class="btn btn-primary" value="Forgot password" >
         </div>
     </form>
 </div>

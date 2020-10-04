@@ -1,5 +1,5 @@
 <%- include('TableHeader.ejs') -%>
-<%- include('Navbar.ejs') -%>
+<%- include('Navbar_Post_Login.ejs') -%>
 <table class="tableStyle">
     <thead>
     <tr>
@@ -13,10 +13,10 @@
     <tbody>
     <%  doctorData.forEach(function (doctor){ %>
         <tr>
-            <td><%= doctor.Name%>   </td>
-            <td><%= doctor.Phone_number%>   </td>
-            <td><%= doctor.E_mail%> </td>
-            <td><%= doctor.Medical_scpecialty%> </td>
+            <td><%= doctor.name%>   </td>
+            <td><%= doctor.phone_number%>   </td>
+            <td><%= doctor.e_mail%> </td>
+            <td><%= doctor.med_spec%> </td>
             <td>
                 <a href='/Doctors/edit/<%= doctor._DoctorID%>'> <i class="far fa-edit"> </i> </a>
                 <a href='#'> <i class="far fa-trash-alt"></i> </a>

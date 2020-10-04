@@ -27,7 +27,11 @@ label[name="indexLabe"]{
     margin-top: 20px;"
     color: black;
 }
-input[name="indexInput"]{
+input[name="username"]{
+    margin-top: 5px;
+    width: 28%;
+}
+input[name="password"]{
     margin-top: 5px;
     width: 28%;
 }

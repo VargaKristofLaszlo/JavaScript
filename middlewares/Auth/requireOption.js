@@ -1,0 +1,14 @@
+/*
+* Ellenőrzi, hogy létezik-e az objectRepository és az adott kulcs.
+* Ha igen visszaadja.
+* Ha nem error-t dob
+* */
+
+function requireOption(objectRepository, propertyName) {
+    if (objectRepository && objectRepository[propertyName]) {
+        return objectRepository[propertyName];
+    }
+    throw new TypeError(`${propertyName} required`);
+}
+
+module.exports = requireOption;

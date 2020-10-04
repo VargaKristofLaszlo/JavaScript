@@ -1,5 +1,5 @@
 /**
- *  Ha hibás volt a jelszó akkor a felhasználót értesíti.
+ *  A belépett felhasználót jelentkezteti ki.
  * */
 
 module.exports = function (objectRepository){

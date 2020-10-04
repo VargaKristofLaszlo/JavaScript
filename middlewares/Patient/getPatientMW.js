@@ -4,18 +4,22 @@
  * Ha létezik ez az objektum elhelyezi a res.locals.patient-be
  * */
 
+const requireOption = require('../Auth/requireOption');
+
 module.exports = function (objectRepository){
+
+    const PatientModel = requireOption(objectRepository, 'PatientModel')
+
     return function (req,res,next){
-        res.locals.patient =
-            {
-                Name: 'Test_Name',
-                Illness: 'Covid',
-                Date_of_birth:  '1999.11.11',
-                Name_of_the_doctor: 'Doctor_Name',
-                _id:'id1'
-            };
+        PatientModel.find({}, (err,patients)=>{
+            if(err) {
+                console.log(err);
+                next(err);
+            }
+            res.locals.patients = patients;
+            next();
+        });
 
 
-        return next();
     }
 }
