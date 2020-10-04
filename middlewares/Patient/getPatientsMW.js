@@ -1,5 +1,6 @@
 /**
- * Visszadja az összes  egy orvoshoz tartozó patient objektumot és elmenti a res.locals.patients-be
+ * Visszadja az összes patient objektumot és elmenti a res.locals.patients-be
+ * A beteghez tartozó doktor nevét a res.locals.patient_doctor-ba menti.
  * */
 
 const requireOption = require('../Auth/requireOption');

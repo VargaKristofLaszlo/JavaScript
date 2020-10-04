@@ -15,13 +15,7 @@ module.exports = function (app){
         PatientModel: PatientModel
     };
 
-   //Létrehoz egy új orvost
-   app.use('/Doctors/new',
-       authMW(objectRepository),
-       checkPermissionMW(objectRepository),
-       saveDoctorMW(objectRepository),
-       renderMW(objectRepository, 'Doctor_Registering')
-       );
+
 
    //Módosítja az orvos adatait
    app.use('/Doctors/edit/:DoctorID',
@@ -38,9 +32,16 @@ module.exports = function (app){
        checkPermissionMW(objectRepository),
        getDoctorMW(objectRepository),
        delDoctorMW(objectRepository)
+
        );
 
-
+    //Létrehoz egy új orvost
+    app.use('/Doctors/new',
+        authMW(objectRepository),
+        checkPermissionMW(objectRepository),
+        saveDoctorMW(objectRepository),
+        renderMW(objectRepository, 'Doctor_Registering')
+    );
     //Megjeleníti az összes orvost
     app.get('/Doctors',
         authMW(objectRepository),

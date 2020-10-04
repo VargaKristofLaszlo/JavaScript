@@ -3,8 +3,9 @@
  *  már egy meglévőt kell-e felülírnia
  *  Ha nem létezik írja felül, ha létezik akkor pedig update-elje
  * */
-
+const requireOption = require('../Auth/requireOption');
 module.exports = function (objectRepository){
+    const PatientModel = requireOption(objectRepository, 'PatientModel');
     return function (req,res,next){
 
         if( (typeof req.body.Name ==='undefined')           ||
@@ -14,8 +15,21 @@ module.exports = function (objectRepository){
         ){
             return  next();
         }
-        console.log('Work in progress');
-        console.log(req.body);
+        res.locals.patient = new PatientModel();
+
+        res.locals.patient.name = req.body.Name;
+        res.locals.patient.illness = req.body.Illness;
+        res.locals.patient.date_of_birth = req.body.Birth;
+
+
+        //Ide kell még majd az orvosos rész, de ahhoz tudnom kell ki van belépve.
+
+        //res.locals._name_doctor = res.locals.doctor._id;
+
+
+        /*res.locals.patient.save((err)=>{
+            if(err) return  next(err);
+        })*/
 
 
         return res.redirect('/Patients');

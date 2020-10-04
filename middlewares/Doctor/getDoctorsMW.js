@@ -17,7 +17,5 @@ module.exports = function (objectRepository){
             res.locals.doctorData = doctors;
             next();
         });
-
-
-    }
-}
+    };
+};

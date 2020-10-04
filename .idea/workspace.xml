@@ -19,14 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="login not working yet">
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Belépés működik, a betegek orvosainak nevét nem tudja elsőre betölteni">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Auth/checkPasswordMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/checkPasswordMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/Doctorlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Doctorlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/delDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/delDoctorMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Doctor/getDoctorsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorsMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/saveDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/saveDoctorMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Patients.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Patients.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Doctor.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Doctor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Patient.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Patient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Doctor.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Doctor.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/DoctorEdit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/DoctorEdit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Doctor_Registering.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Doctor_Registering.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/DoctorsPatient.ejs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +124,8 @@
       <workItem from="1601621867985" duration="5608000" />
       <workItem from="1601648049864" duration="1336000" />
       <workItem from="1601733933311" duration="36000" />
-      <workItem from="1601777713477" duration="30020000" />
+      <workItem from="1601777713477" duration="34887000" />
+      <workItem from="1601840072200" duration="9905000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -238,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601815009602</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Belépés működik, a betegek orvosainak nevét nem tudja elsőre betölteni">
+      <created>1601820303420</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1601820303420</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +287,8 @@
     <MESSAGE value="Orvos create,view,edit mw-kész&#10;Beteg create,view,edit mw-kész&#10;&#10;Home page még nincs kész." />
     <MESSAGE value="Fogalmam sincs hol tartok,de már kell commit" />
     <MESSAGE value="login not working yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="login not working yet" />
+    <MESSAGE value="Belépés működik, a betegek orvosainak nevét nem tudja elsőre betölteni" />
+    <option name="LAST_COMMIT_MESSAGE" value="Belépés működik, a betegek orvosainak nevét nem tudja elsőre betölteni" />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
@@ -319,10 +335,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600690141692" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601815014622">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601820306406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601815014622" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601820306406" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601476309317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
