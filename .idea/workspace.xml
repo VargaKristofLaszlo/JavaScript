@@ -19,21 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Belépés működik, a betegek orvosainak nevét nem tudja elsőre betölteni">
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Edit működik, a del még nem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Routes/Doctorlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Doctorlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/Patientlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Patientlist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Doctor/delDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/delDoctorMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/getDoctorsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorsMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Doctor/saveDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/saveDoctorMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Doctor.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Doctor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Patient.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Patient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Doctor.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Doctor.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/DoctorEdit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/DoctorEdit.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Doctor_Registering.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Doctor_Registering.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/DoctorsPatient.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/PatientEdit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/PatientEdit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Patients.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Patients.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +124,10 @@
       <workItem from="1601648049864" duration="1336000" />
       <workItem from="1601733933311" duration="36000" />
       <workItem from="1601777713477" duration="34887000" />
-      <workItem from="1601840072200" duration="9905000" />
+      <workItem from="1601840072200" duration="10030000" />
+      <workItem from="1601909363382" duration="2569000" />
+      <workItem from="1601936465271" duration="168000" />
+      <workItem from="1602597058036" duration="8035000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -253,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601820303420</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Edit működik, a del még nem">
+      <created>1601850092831</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1601850092831</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,17 +297,18 @@
     <MESSAGE value="Fogalmam sincs hol tartok,de már kell commit" />
     <MESSAGE value="login not working yet" />
     <MESSAGE value="Belépés működik, a betegek orvosainak nevét nem tudja elsőre betölteni" />
-    <option name="LAST_COMMIT_MESSAGE" value="Belépés működik, a betegek orvosainak nevét nem tudja elsőre betölteni" />
+    <MESSAGE value="Edit működik, a del még nem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit működik, a del még nem" />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601038280878" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601784172531">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602602574235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601784172531" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602602574235" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601583063612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -315,30 +325,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="766" y="218" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600186860955" />
-    <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1600119118136">
+    <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1602597961847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600119118136" />
-    <state width="1899" height="266" key="GridCell.Tab.0.center" timestamp="1600119118136">
+    <state width="1899" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602597961847" />
+    <state width="1899" height="266" key="GridCell.Tab.0.center" timestamp="1602597961847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600119118136" />
-    <state width="1899" height="266" key="GridCell.Tab.0.left" timestamp="1600119118135">
+    <state width="1899" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602597961847" />
+    <state width="1899" height="266" key="GridCell.Tab.0.left" timestamp="1602597961847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600119118135" />
-    <state width="1899" height="266" key="GridCell.Tab.0.right" timestamp="1600119118136">
+    <state width="1899" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602597961847" />
+    <state width="1899" height="266" key="GridCell.Tab.0.right" timestamp="1602597961847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600119118136" />
+    <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602597961847" />
     <state x="759" y="222" key="RollbackChangesDialog" timestamp="1600690141692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600690141692" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601820306406">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601850096429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601820306406" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601850096429" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601476309317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

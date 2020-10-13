@@ -1,5 +1,5 @@
 /**
- *  A Post paramétereit(rest.locals.doctor) felhasználva eldönti, hogy új objektumot kell-e mentenie vagy
+ *  A Post paramétereit(rest.locals.doctorData) felhasználva eldönti, hogy új objektumot kell-e mentenie vagy
  *  már egy meglévőt kell-e felülírnia
  *  Ha nem létezik írja felül, ha létezik akkor pedig update-elje
  *  Ha sikerült elvégeznie a műveletet akkor vigyen vissza a /Doctors-ra.
@@ -19,20 +19,20 @@ module.exports = function (objectRepository){
             return  next();
         }
 
-        if(typeof res.locals.doctor ==='undefined')  {
-            res.locals.doctor = new DoctorModel();
+        if(typeof res.locals.doctorData ==='undefined')  {
+            res.locals.doctorData = new DoctorModel();
         }
 
-        res.locals.doctor.name = req.body.Name;
-        res.locals.doctor.password = req.body.Password;
-        res.locals.doctor.phone_number = req.body.Phone;
-        res.locals.doctor.e_mail = req.body.Mail;
-        res.locals.doctor.med_spec = req.body.Specialty;
-        if(req.body.Admin === 'on') res.locals.doctor.permission = true;
-        else res.locals.doctor.permission  = false;
-        res.locals.doctor.visible = true;
+        res.locals.doctorData.name = req.body.Name;
+        res.locals.doctorData.password = req.body.Password;
+        res.locals.doctorData.phone_number = req.body.Phone;
+        res.locals.doctorData.e_mail = req.body.Mail;
+        res.locals.doctorData.med_spec = req.body.Specialty;
+        if(req.body.Admin === 'on') res.locals.doctorData.permission = true;
+        else res.locals.doctorData.permission  = false;
+        res.locals.doctorData.visible = true;
 
-       res.locals.doctor.save((err)=>{
+       res.locals.doctorData.save((err)=>{
             if(err) return  next(err);
         })
 

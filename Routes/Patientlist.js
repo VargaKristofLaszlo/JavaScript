@@ -16,12 +16,6 @@ module.exports = function (app){
     };
 
 
-    //Megjeleníti az  összes beteget
-    app.get('/Patients/',
-        authMW(objectRepository),
-        getPatientsMW(objectRepository),
-        renderMW(objectRepository, 'Patients')
-    );
 
 
     //Létrehoz egy új beteget
@@ -49,4 +43,17 @@ module.exports = function (app){
         getPatientMW(objectRepository),
         delPatientMW(objectRepository)
     );
+
+
+
+    //Megjeleníti az  összes beteget
+    app.get('/Patients',
+        authMW(objectRepository),
+        getPatientsMW(objectRepository),
+        renderMW(objectRepository, 'Patients')
+    );
+
+
+
+
 }

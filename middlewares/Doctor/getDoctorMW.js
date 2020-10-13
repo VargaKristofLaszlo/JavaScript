@@ -1,7 +1,6 @@
 /**
  * Visszadja a megindexelt  doktor objektumot
- * Ha ez az objektum nem létezik akkor visszatér a /Doctors-ra
- * Ha létezik ez az objektum elhelyezi a res.locals.doctor-ba
+ * Ha létezik ez az objektum elhelyezi a res.locals.doctorData-ba
  * */
 const requireOption = require('../Auth/requireOption');
 

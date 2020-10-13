@@ -8,18 +8,30 @@ const requireOption = require('../Auth/requireOption');
 
 module.exports = function (objectRepository){
 
-    const PatientModel = requireOption(objectRepository, 'PatientModel')
+    const PatientModel = requireOption(objectRepository, 'PatientModel');
+    const DoctorModel = requireOption(objectRepository, 'DoctorModel');
+    let doctor_name;
 
     return function (req,res,next){
-        PatientModel.find({}, (err,patients)=>{
+        PatientModel.findOne({_id: req.params.PatientID}, (err,patient)=>{
             if(err) {
                 console.log(err);
                 next(err);
             }
-            res.locals.patients = patients;
+            DoctorModel.findOne({_id: patient._name_doctor},{name:1},(err,doctor)=> {
+                if (err) {
+                        console.log(err);
+                        next(err);
+                    }
+                doctor_name = doctor.name;
+                })
+
+
+            res.locals.doctor_name = doctor_name;
+            res.locals.patient = patient;
             next();
         });
 
 
-    }
-}
+    };
+};

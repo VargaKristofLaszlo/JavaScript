@@ -2,6 +2,7 @@
  *  A Post paramétereit(rest.locals.patient) felhasználva eldönti, hogy új objektumot kell-e mentenie vagy
  *  már egy meglévőt kell-e felülírnia
  *  Ha nem létezik írja felül, ha létezik akkor pedig update-elje
+ *  Ha végzett átirányít a /Patients-re
  * */
 const requireOption = require('../Auth/requireOption');
 module.exports = function (objectRepository){
