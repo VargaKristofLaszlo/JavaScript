@@ -25,12 +25,12 @@ module.exports = function (objectRepository){
 
         //Ide kell még majd az orvosos rész, de ahhoz tudnom kell ki van belépve.
 
-        //res.locals._name_doctor = res.locals.doctor._id;
+      //  res.locals._name_doctor = res.locals.doctor._id;
 
 
-        /*res.locals.patient.save((err)=>{
+        res.locals.patient.save((err)=>{
             if(err) return  next(err);
-        })*/
+        })
 
 
         return res.redirect('/Patients');

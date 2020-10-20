@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Edit működik, a del még nem">
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="A getPatientsMW működik a getPatientMW-nél még a res.locals.patient az undifined">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601850092831</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="A getPatientsMW működik a getPatientMW-nél még a res.locals.patient az undifined">
+      <created>1603216789614</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603216789615</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +294,8 @@
     <MESSAGE value="login not working yet" />
     <MESSAGE value="Belépés működik, a betegek orvosainak nevét nem tudja elsőre betölteni" />
     <MESSAGE value="Edit működik, a del még nem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit működik, a del még nem" />
+    <MESSAGE value="A getPatientsMW működik a getPatientMW-nél még a res.locals.patient az undifined" />
+    <option name="LAST_COMMIT_MESSAGE" value="A getPatientsMW működik a getPatientMW-nél még a res.locals.patient az undifined" />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
@@ -337,10 +342,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603212905094" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601850096429">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603216798368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601850096429" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603216798368" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601476309317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
