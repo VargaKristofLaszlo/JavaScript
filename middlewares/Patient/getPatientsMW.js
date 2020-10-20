@@ -5,38 +5,36 @@
  * */
 
 
-
 /***/
+
+
 const requireOption = require('../Auth/requireOption');
 const List = require("collections/list");
+const async = require("async/index");
 
-module.exports = function (objectRepository){
+module.exports = function (objectRepository) {
 
     const PatientModel = requireOption(objectRepository, 'PatientModel');
     const DoctorModel = requireOption(objectRepository, 'DoctorModel');
     let nameList = new List();
-    return function (req,res,next){
-        PatientModel.find({},{}, (err,patients)=>{
-            if(err) {
+    return function (req, res, next) {
+        PatientModel.find({}, {}, (err, patients) => {
+            if (err) {
                 console.log(err);
                 next(err);
             }
-
-
-            patients.forEach(function (patient){
-                DoctorModel.findOne({_id: patient._name_doctor},{name:1},(err,doctor)=> {
+            async.mapSeries(patients, (patient) => {
+                DoctorModel.findOne({_id: patient._name_doctor}, {name: 1}, (err, doctor) => {
                     if (err) {
                         console.log(err);
                         next(err);
                     }
-                   nameList.push(doctor.name);
+                    nameList.push(doctor.name);
+                    next();
                 })
             });
             res.locals.patient_doctor = nameList;
             res.locals.patients = patients;
-            next();
         });
-
-
     }
 }

@@ -21,18 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Edit működik, a del még nem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/Doctorlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Doctorlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/Patientlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Patientlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/delDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/delDoctorMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/saveDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/saveDoctorMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/PatientEdit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/PatientEdit.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Patients.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Patients.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,10 +333,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602597961847" />
-    <state x="759" y="222" key="RollbackChangesDialog" timestamp="1600690141692">
+    <state x="759" y="222" key="RollbackChangesDialog" timestamp="1603212905094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600690141692" />
+    <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603212905094" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601850096429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
