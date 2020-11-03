@@ -20,25 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Mindkét beteges get működik, a betegkészítés még rossz.">
-      <change afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsForHomeMW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unit/middleware/Doctor/getDoctorMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/Others.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Others.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/Patientlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Patientlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Auth/LogoutMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/LogoutMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Auth/authMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/authMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Auth/checkPasswordMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/checkPasswordMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Permisson/checkPermissionMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Permisson/checkPermissionMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Navbar_Post_Login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Navbar_Post_Login.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Patient_Registering.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Patient_Registering.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,12 +61,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\varga\WebstormProjects\untitled\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\varga\WebstormProjects\untitled" />
       <recent name="C:\Users\varga\WebstormProjects\Routes" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\varga\WebstormProjects\untitled\views" />
     </key>
   </component>
   <component name="RunManager">
