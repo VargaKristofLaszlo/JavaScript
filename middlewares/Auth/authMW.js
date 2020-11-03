@@ -3,7 +3,13 @@
  *  Ha igen akkor továbblép , ha nem akkor visszalép /-re
  * */
     module.exports = function (objectRepository) {
+
+
         return function (req,res,next){
-            return next();
-        }        
-    }
+           if(typeof  req.session.belepve === 'undefined' ||
+                req.session.belepve !== true){
+               return res.redirect('/');
+           }
+           next();
+        };
+    };

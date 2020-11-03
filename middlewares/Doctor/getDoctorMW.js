@@ -12,9 +12,11 @@ module.exports = function (objectRepository){
         DoctorModel.findOne({_id: req.params.DoctorID}, (err,doctors)=>{
             if(err) {
                 console.log(err);
+
                 next(err);
             }
             res.locals.doctorData = doctors;
+
             next();
         });
     };

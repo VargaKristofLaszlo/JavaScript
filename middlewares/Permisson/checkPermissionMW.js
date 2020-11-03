@@ -5,8 +5,16 @@
  * */
 
 module.exports = function (objectRepository){
-    return function (res,req,next){
+    return function (req,res,next){
+        if(req.session.felhasznalo.permission){
+            next();
+        }
+        else
+        {
+            res.redirect('/Home');
 
-        return next();
+
+        }
+
     }
 }

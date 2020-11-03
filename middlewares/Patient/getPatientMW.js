@@ -11,7 +11,7 @@ module.exports = function (objectRepository) {
 
     const PatientModel = requireOption(objectRepository, 'PatientModel');
     const DoctorModel = requireOption(objectRepository, 'DoctorModel');
-    const List = require("collections/list");
+
 
 
 

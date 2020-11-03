@@ -19,7 +19,11 @@ module.exports = function (objectRepository){
                     console.log(err);
                     next(err);
                 }
-                if(doctors) return res.redirect('/Home');
+                if(doctors) {
+                    req.session.felhasznalo = doctors;
+                    req.session.belepve = true;
+                    return req.session.save((err)=>  res.redirect('/Home'));
+                }
                 res.locals.error = 'Wrong password!';
                 next();
             });

@@ -37,7 +37,7 @@ module.exports = function (app){
 
 
     //Törli a beteget
-    app.get('/Patient/del/:DoctorID/:PatientID',
+    app.get('/Patient/del/:PatientID',
         authMW(objectRepository),
         getDoctorMW(objectRepository),
         getPatientMW(objectRepository),
@@ -48,9 +48,9 @@ module.exports = function (app){
 
     //Megjeleníti az  összes beteget
     app.get('/Patients',
-        authMW(objectRepository),
-        getPatientsMW(objectRepository),
-        renderMW(objectRepository, 'Patients')
+       authMW(objectRepository),
+       getPatientsMW(objectRepository),
+       renderMW(objectRepository, 'Patients')
     );
 
 

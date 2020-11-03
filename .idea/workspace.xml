@@ -19,9 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="A getPatientsMW működik a getPatientMW-nél még a res.locals.patient az undifined">
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Mindkét beteges get működik, a betegkészítés még rossz.">
+      <change afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsForHomeMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/Others.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Others.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/Patientlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Patientlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Auth/LogoutMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/LogoutMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Auth/authMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/authMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Auth/checkPasswordMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth/checkPasswordMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Doctor/getDoctorMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/delPatientMW.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Permisson/checkPermissionMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Permisson/checkPermissionMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Navbar_Post_Login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Navbar_Post_Login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Patient_Registering.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/Patient_Registering.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +134,13 @@
       <workItem from="1601909363382" duration="2569000" />
       <workItem from="1601936465271" duration="168000" />
       <workItem from="1602597058036" duration="8035000" />
+      <workItem from="1603223949656" duration="40000" />
+      <workItem from="1603264593042" duration="232000" />
+      <workItem from="1603385580731" duration="1668000" />
+      <workItem from="1603454574971" duration="42000" />
+      <workItem from="1603536513835" duration="630000" />
+      <workItem from="1603809849688" duration="267000" />
+      <workItem from="1604395585112" duration="18583000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -258,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603216789615</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Mindkét beteges get működik, a betegkészítés még rossz.">
+      <created>1603219573986</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603219573986</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,17 +326,22 @@
     <MESSAGE value="Belépés működik, a betegek orvosainak nevét nem tudja elsőre betölteni" />
     <MESSAGE value="Edit működik, a del még nem" />
     <MESSAGE value="A getPatientsMW működik a getPatientMW-nél még a res.locals.patient az undifined" />
-    <option name="LAST_COMMIT_MESSAGE" value="A getPatientsMW működik a getPatientMW-nél még a res.locals.patient az undifined" />
+    <MESSAGE value="Mindkét beteges get működik, a betegkészítés még rossz." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mindkét beteges get működik, a betegkészítés még rossz." />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601038280878" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602602574235">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604408637118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602602574235" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604408637118" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1604408623435">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604408623435" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601583063612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -342,10 +378,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603212905094" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603216798368">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603219581460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603216798368" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603219581460" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601476309317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -354,5 +390,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1601122650651" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1604401957420">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604401957420" />
   </component>
 </project>

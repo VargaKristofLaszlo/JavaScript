@@ -1,5 +1,8 @@
 <%- include('TableHeader.ejs') -%>
 <%- include('Navbar_Post_Login.ejs') -%>
+
+
+
 <h1> List of your patients.</h1>
 <table  class="tableStyle" >
     <thead>
@@ -12,16 +15,19 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>Test_Name</td>
-        <td>Covid</td>
-        <td>1111.11.11</td>
-        <td>Doctor_name</td>
-        <td>
-           <a href='/Patient/edit/<%= patients._id%>'> <i class="far fa-edit"> </i> </a>
-            <a href='#'> <i class="far fa-trash-alt"></i> </a>
-        </td>
-    </tr>
+    <%  patients.forEach(function (patient){ %>
+        <tr>
+            <td><%= patient.name%>   </td>
+            <td><%= patient.illness%>   </td>
+            <td><%= patient.date_of_birth%> </td>
+            <td><%= patient_doctor.shift()%> </td>
+            <td>
+                <a href='/Patient/edit/<%= patient._id%>'> <i class="far fa-edit"> </i> </a>
+                <a href='/Patient/del/<%= patient._id%>'> <i class="far fa-trash-alt"></i> </a>
+            </td>
+        </tr>
+
+    <%  });  %>
 
     </tbody>
 </table>

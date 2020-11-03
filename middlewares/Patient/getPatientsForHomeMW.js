@@ -10,6 +10,7 @@ const List = require("collections/list");
 const async = require("async/index");
 
 
+
 module.exports = function (objectRepository) {
 
     const PatientModel = requireOption(objectRepository, 'PatientModel');
@@ -18,7 +19,7 @@ module.exports = function (objectRepository) {
     let nameList = new List();
     return function (req, res, next) {
         let i = 0;
-        PatientModel.find({}, {}, (err, patients) => {
+        PatientModel.find({_name_doctor: req.session.felhasznalo._id}, {}, (err, patients) => {
             if (err) {
                 console.log(err);
                 next(err);
@@ -32,7 +33,7 @@ module.exports = function (objectRepository) {
             async.mapSeries(patients, function (patient,callback) {
 
 
-                    DoctorModel.findOne({_id: patient._name_doctor}, {name: 1}, (err, doctor) => {
+                DoctorModel.findOne({_id: patient._name_doctor}, {name: 1}, (err, doctor) => {
                     if (err) {
                         console.log(err);
                         next(err);
@@ -40,8 +41,9 @@ module.exports = function (objectRepository) {
 
                     nameList.push(doctor.name);
 
-                   callback(null, i++);
-                   if(i === patients.length) next();
+                    callback(null, i++);
+
+                    if(i === patients.length) next();
                 })
             });
             res.locals.patient_doctor = nameList;
@@ -49,7 +51,6 @@ module.exports = function (objectRepository) {
 
 
         });
-
 
     }
 }

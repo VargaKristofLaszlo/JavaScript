@@ -11,8 +11,7 @@ module.exports = function (objectRepository){
 
         if( (typeof req.body.Name ==='undefined')           ||
             (typeof  req.body.Illness ==='undefined')  ||
-            (typeof  req.body.Birth === 'undefined')       ||
-            (typeof  req.body.Doctor_name === 'undefined')
+            (typeof  req.body.Birth === 'undefined')
         ){
             return  next();
         }
@@ -22,10 +21,7 @@ module.exports = function (objectRepository){
         res.locals.patient.illness = req.body.Illness;
         res.locals.patient.date_of_birth = req.body.Birth;
 
-
-        //Ide kell még majd az orvosos rész, de ahhoz tudnom kell ki van belépve.
-
-      //  res.locals._name_doctor = res.locals.doctor._id;
+        res.locals.patient._name_doctor = req.session.felhasznalo._id;
 
 
         res.locals.patient.save((err)=>{

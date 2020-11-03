@@ -1,8 +1,9 @@
 const renderMW = require('../middlewares/Rendering/renderMW');
-const getPatientMW = require('../middlewares/Patient/getPatientMW');
 const checkPasswordMW = require('../middlewares/Auth/checkPasswordMW');
 const authMW = require('../middlewares/Auth/authMW');
 const LogoutMW = require('../middlewares/Auth/LogoutMW');
+const checkPermissionMW = require('../middlewares/Permisson/checkPermissionMW');
+const getPatientsForHomeMw = require('../middlewares/Patient/getPatientsForHomeMW');
 
 
 const DoctorModel = require('../models/Doctor');
@@ -19,14 +20,16 @@ module.exports = function (app) {
 
     //A bejelentkezett orvos betegeit jeleníti meg.
     app.use('/Home',
-        getPatientMW(objectRepository),
+        authMW(objectRepository),
+        getPatientsForHomeMw(objectRepository),
         renderMW(objectRepository, 'Home')
         );
 
 
     //A bejelenetkezett felhasználó kiléptetését oldja meg
     app.get('/Logout',
-        LogoutMW);
+        LogoutMW(objectRepository)
+        );
 
     //A bejelentkező felületet jeleníti meg.
     app.use('/',
