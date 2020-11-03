@@ -20,7 +20,7 @@ module.exports = function (app){
         authMW(objectRepository),
         checkPermissionMW(objectRepository),
         getDoctorMW(objectRepository),
-        delDoctorMW(objectRepository)
+        delDoctorMW()
     );
 
    //Módosítja az orvos adatait

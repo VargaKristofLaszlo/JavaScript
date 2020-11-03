@@ -5,7 +5,7 @@
 
 const requireOption = require('../Auth/requireOption');
 
-module.exports = function (objectRepository){
+module.exports = function (){
     return function (req,res,next){
         if(typeof res.locals.doctorData ==='undefined')  {
             return  next();
