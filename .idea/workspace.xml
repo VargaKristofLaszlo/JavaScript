@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Kész minden">
+    <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Javítások">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsForHomeMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsForHomeMW.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604433371840</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Javítások">
+      <created>1604443243718</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1604443243718</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +325,8 @@
     <MESSAGE value="A getPatientsMW működik a getPatientMW-nél még a res.locals.patient az undifined" />
     <MESSAGE value="Mindkét beteges get működik, a betegkészítés még rossz." />
     <MESSAGE value="Már csak 1 teszt kell" />
-    <option name="LAST_COMMIT_MESSAGE" value="Már csak 1 teszt kell" />
+    <MESSAGE value="Javítások" />
+    <option name="LAST_COMMIT_MESSAGE" value="Javítások" />
   </component>
   <component name="WindowStateProjectService">
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601038280878">
@@ -370,10 +377,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603212905094" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604433376428">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604443247752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604433376428" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604443247752" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601476309317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

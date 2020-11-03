@@ -1,5 +1,5 @@
 /**
- * Visszadja az összes patient objektumot és elmenti a res.locals.patients-be
+ * Visszadja a bejelentkezett orvos patient objektumait és elmenti a res.locals.patients-be
  * A beteghez tartozó doktor nevét a res.locals.patient_doctor-ba menti.
  *
  * */
@@ -16,7 +16,6 @@ module.exports = function (objectRepository) {
     const PatientModel = requireOption(objectRepository, 'PatientModel');
     const DoctorModel = requireOption(objectRepository, 'DoctorModel');
 
-    let nameList = new List();
     return function (req, res, next) {
         let i = 0;
         PatientModel.find({_name_doctor: req.session.felhasznalo._id}, {}, (err, patients) => {
@@ -26,7 +25,7 @@ module.exports = function (objectRepository) {
             }
 
             if(patients.length === 0) {
-                res.locals.patient_doctor = nameList;
+                res.locals.patient_doctor = req.session.felhasznalo.name;
                 res.locals.patients = patients;
                 next();
             }
@@ -39,14 +38,14 @@ module.exports = function (objectRepository) {
                         next(err);
                     }
 
-                    nameList.push(doctor.name);
+
 
                     callback(null, i++);
 
                     if(i === patients.length) next();
                 })
             });
-            res.locals.patient_doctor = nameList;
+            res.locals.patient_doctor = req.session.felhasznalo.name;
             res.locals.patients = patients;
 
 
