@@ -15,13 +15,17 @@ module.exports = function (objectRepository){
         ){
             return  next();
         }
-        res.locals.patient = new PatientModel();
+
+        if(typeof res.locals.patient === 'undefined'){
+            res.locals.patient = new PatientModel();
+        }
 
         res.locals.patient.name = req.body.Name;
         res.locals.patient.illness = req.body.Illness;
         res.locals.patient.date_of_birth = req.body.Birth;
 
         res.locals.patient._name_doctor = req.session.felhasznalo._id;
+
 
 
         res.locals.patient.save((err)=>{
