@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8c386fd5-9feb-4d30-a809-8e8ea369bb69" name="Default Changelist" comment="Javítások">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientsForHomeMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientsForHomeMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/getPatientMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Patient/savePatientMW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/PatientEdit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/PatientEdit.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +126,9 @@
       <workItem from="1603536513835" duration="630000" />
       <workItem from="1603809849688" duration="267000" />
       <workItem from="1604395585112" duration="18583000" />
+      <workItem from="1604516992591" duration="9000" />
+      <workItem from="1604603467728" duration="28000" />
+      <workItem from="1606670024438" duration="3872000" />
     </task>
     <task id="LOCAL-00001" summary="Kis változtatások">
       <created>1600187201770</created>
@@ -286,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604443243718</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Javítások">
+      <created>1604443680889</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1604443680889</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,10 +389,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603212905094" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604443247752">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604443686717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604443247752" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604443686717" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601476309317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -25,9 +25,13 @@
         </div>
         <div class="row">
             <div class="form-group">
+
                 <label for="Doctor_name"><b>Name of the doctor</b></label>
-                <input type="text" class="form-control" id="Doctor_name" name="Doctor_name"
-                        value="<%=doctor_name%>">
+                <select class="form-control" id="doctorSelector" name="doctorSelector">
+                    <%  doctor_name.forEach(function (doctor){ %>
+                    <option value="<%=doctor._id%>"> <%=doctor.name%></option>
+                    <%  });  %>
+                </select>
             </div>
         </div>
         <div class="row">

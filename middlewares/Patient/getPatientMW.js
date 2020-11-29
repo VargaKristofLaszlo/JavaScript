@@ -14,7 +14,6 @@ module.exports = function (objectRepository) {
 
 
 
-
     return function (req, res, next) {
         PatientModel.findOne({_id: req.params.PatientID}, (err,_patient)=>{
             if(err) {
@@ -23,13 +22,18 @@ module.exports = function (objectRepository) {
             }
             patient = _patient;
             res.locals.patient = patient;
-            DoctorModel.findOne({_id: patient._name_doctor},{name:1},(err,doctor)=> {
+            DoctorModel.find({},{},(err,doctors)=> {
                 if (err) {
                     console.log(err);
                     next(err);
                 }
-                doctor_name = doctor.name;
-                res.locals.doctor_name = doctor_name;
+                let doctorList = [];
+                doctors.forEach(function (doctor){
+                   doctorList.push(doctor);
+                });
+
+
+                res.locals.doctor_name = doctorList;
                 next();
         });
 

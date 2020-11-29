@@ -12,6 +12,7 @@ module.exports = function (objectRepository){
         if( (typeof req.body.Name ==='undefined')           ||
             (typeof  req.body.Illness ==='undefined')  ||
             (typeof  req.body.Birth === 'undefined')
+
         ){
             return  next();
         }
@@ -24,8 +25,12 @@ module.exports = function (objectRepository){
         res.locals.patient.illness = req.body.Illness;
         res.locals.patient.date_of_birth = req.body.Birth;
 
-        res.locals.patient._name_doctor = req.session.felhasznalo._id;
-
+        if(typeof req.body.doctorSelector ==='undefined') {
+            res.locals.patient._name_doctor = req.session.felhasznalo._id;
+        }
+        else {
+            res.locals.patient._name_doctor = req.body.doctorSelector.toString();
+        }
 
 
         res.locals.patient.save((err)=>{
